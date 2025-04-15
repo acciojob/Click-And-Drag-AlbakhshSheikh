@@ -1,3 +1,4 @@
+const container = document.querySelector('.items');
 let isDown = false;
 let startX;
 let scrollLeft;
@@ -23,6 +24,6 @@ container.addEventListener('mousemove', (e) => {
   if (!isDown) return;
   e.preventDefault();
   const x = e.pageX - container.offsetLeft;
-  const walk = (x - startX) * 2; //scroll-fast
+  const walk = (x - startX) * 1.5; // Adjust scroll speed
   container.scrollLeft = scrollLeft - walk;
 });

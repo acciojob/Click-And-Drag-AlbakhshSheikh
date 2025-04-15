@@ -23,11 +23,11 @@ body {
   padding: 100px;
   width: 100%;
   border: 1px solid white;
-  overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
   user-select: none;
-  cursor: pointer;
+   cursor: grab;
+  overflow-x: scroll;
   transition: all 0.2s;
   transform: scale(0.98);
   will-change: transform;
